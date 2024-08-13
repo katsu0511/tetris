@@ -1,0 +1,83 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  appearance: none;
+}
+
+#field {
+  display: flex;
+}
+
+.buttons {
+  margin-left: 20px;
+}
+
+.rotate {
+  margin-top: 50px;
+}
+
+#rotate {
+  position: relative;
+  left: 60px;
+}
+
+.arrows {
+  position: relative;
+  margin-top: 50px;
+}
+
+button {
+  display: inline-block;
+  background-color: rgb(200, 200, 200);
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0 5px;
+  border: solid 1px black;
+  box-sizing: content-box;
+  border-radius: 5px;
+  box-shadow: 3px 3px gray;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+button:active {
+  position: relative;
+  box-shadow: none;
+  top: 3px;
+  left: 3px;
+}
+
+.arrows button {
+  position: absolute;
+}
+
+#left {
+  top: 60px;
+}
+
+#right {
+  top: 60px;
+  left: 120px;
+}
+
+#up {
+  left: 60px;
+}
+
+#down {
+  top: 120px;
+  left: 60px;
+}
+
+img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
