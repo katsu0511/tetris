@@ -2487,21 +2487,21 @@ function stopDropping() {
 }
 
 function createShape() {
-  const num = Math.floor(Math.random() * 7);
+  const num = Math.floor(Math.random() * 13);
   let shape = null;
   if (num === 0) {
     shape = new IBlock();
-  } else if (num === 1) {
+  } else if (num === 1 || num === 2) {
     shape = new OBlock();
-  } else if (num === 2) {
+  } else if (num === 3 || num === 4) {
     shape = new SBlock();
-  } else if (num === 3) {
+  } else if (num === 5 || num === 6) {
     shape = new ZBlock();
-  } else if (num === 4) {
+  } else if (num === 7 || num === 8) {
     shape = new JBlock();
-  } else if (num === 5) {
+  } else if (num === 9 || num === 10) {
     shape = new LBlock();
-  } else if (num === 6) {
+  } else if (num === 11 || num === 12) {
     shape = new TBlock();
   }
   shape.create();
